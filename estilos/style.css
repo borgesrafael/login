@@ -26,16 +26,21 @@ main{
 section#login{
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.425);
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 600px;
     border-radius: 20px;
     /*Centralizar*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
     /*Arrendodar a imagem fora da borda na div#imagem*/
     overflow: hidden;
+
+    /*Animação*/
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
